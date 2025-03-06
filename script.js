@@ -1,11 +1,11 @@
-const inputText = document.getElementById('inputText');
-const searchWord = document.getElementById('searchWord');
-const searchButton = document.getElementById('searchButton');
+const entrada = document.getElementById('entrada');
+const buscador = document.getElementById('buscador');
+const searchButton = document.getElementById('boton');
 const output = document.getElementById('output');
 
-searchButton.addEventListener('click', function() {
-  const text = inputText.innerText;  
-  const word = searchWord.value.trim();
+boton.addEventListener('click', function() {
+  const text = entrada.innerText;  
+  const word = buscador.value.trim();
 
   if (!word) {
     alert("Por favor, ingresa una palabra para buscar.");
@@ -16,7 +16,7 @@ searchButton.addEventListener('click', function() {
 
   const highlightedText = text.replace(regex, '<span class="highlight">$1</span>');
 
-  inputText.innerHTML = highlightedText;
+  entrada.innerHTML = highlightedText;
 
   const matches = text.match(regex);
   const count = matches ? matches.length : 0;

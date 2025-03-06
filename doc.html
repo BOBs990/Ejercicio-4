@@ -17,23 +17,24 @@
       font-size: 16px;
     }
   </style>
- 
+ <script src="script.js"></script>
+ <script defer src="script.js"></script>
 </head> 
 
 <body> 
-  <script src="script.js"></script>
+  
   <h1>Escribe un párrafo</h1>
 
-  <div id="inputText" contenteditable="true" placeholder="Escribe un párrafo aquí..." style="min-height: 200px;"></div>
+  <div id="entrada" contenteditable="true" placeholder="Escribe un párrafo aquí..." style="min-height: 200px;"></div>
 
   <br><br>
   
   <h4>Introduce la palabra a buscar</h4>
-  <input type="text" id="searchWord" placeholder="Escribe la palabra a buscar">
+  <input type="text" id="buscador" placeholder="Escribe la palabra a buscar">
   
   <br><br>
   
-  <button id="searchButton">Buscar la palabra</button>
+  <button id="boton">Buscar la palabra</button>
 
   <div id="output"></div>
 
